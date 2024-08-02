@@ -1,0 +1,365 @@
+:root {
+    --nav-color: #210070;
+    --menu-right-font: 21px;
+    --name-intro-h1: 56.2px;
+    --name-intro-text: 19px;
+    --extra-text: 20px;
+    
+    --button-padding: 20px;
+    --text-color: #04ffc4;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: none;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cac6c6;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b1a8a8;
+}
+
+
+
+body,
+input,
+textarea,
+button {
+    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* header */
+.header {
+    
+    width: 100%;
+    background-color: #FF4242;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    border-bottom: solid 2px #000;
+    z-index: 3; 
+    /* Set a high z-index to ensure it's above other content */
+    justify-content: space-around;
+    height: 80px;
+}
+
+header .left_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropbtn {
+    background-color: #FF4242;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: 4px #fff solid;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {background-color: #f1f1f1}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.dropdown:hover .dropbtn {
+    background-color: #333;
+  }
+
+
+
+/*main1*/
+.main1 {
+    position: relative;
+    background-color: #e7f9ff;
+    display: flex;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    /* background-image: linear-gradient(#FF4242,#e7f9ff,#fff,#47abd8); */
+    color: #000;
+    
+    
+}
+
+.main1 section svg {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+   
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(129% + 1.3px);
+    height: 86px;
+}
+
+.wave .shape-fill {
+    fill: #fff;
+}
+
+
+.main1 section {
+    
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2em;
+    align-items: center;
+    margin-top: 110px;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    padding-left: 30px;
+    
+    
+    
+}
+
+.main1 section .text_section {
+    color: #fff;
+    max-width: 20em;
+}
+
+/*main2*/
+
+.main2 {
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+    height:auto ;
+    background-color: #fff;
+    flex-wrap: wrap;
+    color: #000;
+    width: 100%;
+}
+
+.main2 .col {
+    
+}
+
+
+
+.main2 #left,#mid {
+    border-right: var(--text-color) 2px;
+}
+
+.main2 #left {
+    border-left: #000 solid 2px;
+}
+
+.main2 .row {
+    padding-top: 20px;
+}
+
+.main2 h3 {
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.main2 a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+.main2 a:hover {
+    color: #b1a8a8;
+}
+
+.main2 img {
+    width: 300px;
+    height: 200px;
+    border: #000 solid 3px;
+    border-radius: 2px;
+    cursor: pointer;
+    filter: brightness(1);
+    transition: filter 0.2s ease-in-out;
+}
+
+.main2 img:hover {
+    filter: brightness(0.5);
+    
+}
+
+
+
+
+
+
+
+
+/*main3*/
+
+.main3 {
+    position: relative;
+    padding-left: 0%;
+    padding-right: 0%;
+    height: auto;
+    background-color: #47abd8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.main3 .why {
+    padding-top: 20px;
+}
+
+.main3 .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main3 #left {
+    border-right: 1px solid var(--nav-color) ;
+}
+
+.main3 #mid {
+    border-right: 1px solid var(--nav-color) ;
+}
+
+
+
+/*footer*/
+
+.footer1 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.footer1 .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer1 img {
+    color: #fff;
+}
+
+.footer1 .contact .phone,
+.footer1 .contact .mail,
+.footer1 .contact .contact {
+    color: #fff;
+    
+}
+
+
+
+
+
+.main2,.main3 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+ /* Add a fade-in and float-up effect to the main content */
+.main1 section,
+.main2,
+
+.footer1 {
+    
+    opacity: 0;
+    transform: translateY(20px); /* Start with a translateY value that moves the element down */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.main1 section.show,
+.main2.show,
+.main3.show,
+.footer1.show {
+    opacity: 1;
+    transform: translateY(0); /* Move the element up to its original position */
+}
+
+
+/* .main2 #mid, .main2 #left, .main2 #right, .main3 #left, .main3 #mid, .main3 #right {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+} */
+
+
